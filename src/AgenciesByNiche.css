@@ -1,0 +1,119 @@
+.niche-menu li {
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    flex: 1; /* Each item takes equal width on small screens */
+  }
+  
+  .niche-menu li:hover {
+    background-color: #ccc;
+  }
+  
+  .niche-menu li.active {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .agencies-list-container {
+    padding: 20px;
+  }
+  
+  .agency-item {
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .agency-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .agency-item.expanded {
+    border: 1px solid #3498db;
+  }
+  
+  .agency-info {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .agency-item.expanded .agency-info {
+    display: block;
+  }
+  
+  .agency-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .filter-container {
+    margin-top: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .top3 {
+    border: 2px solid green; /* Adjust the border style as needed */
+  }
+
+  .reviews {
+    margin-left: 5px; /* Adjust the margin as needed */
+    color: gold; /* or any color you prefer for reviews */
+  }
+
+  /* Adjustments for the new layout */
+.agencies-container {
+    display: flex;
+  }
+  
+  .niche-menu {
+    flex: 1; /* Take up 1/3 of the available space */
+    max-width: 90%; /* Adjust the width as needed */
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  .agencies-list-container {
+    flex: 2; /* Take up 2/3 of the available space */
+    padding: 20px;
+  }
+
+/* Media query for screens with a maximum width of 600px (adjust as needed) */
+@media (max-width: 600px) {
+    .agencies-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+    }
+  
+    .niche-menu {
+      width: 100%; /* Take up full width on small screens */
+    }
+  }
